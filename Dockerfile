@@ -1,9 +1,9 @@
-FROM alpine:3.10
+FROM arm32v7/alpine:3.12
 
-MAINTAINER chrisdaish@gmail.com
+MAINTAINER bmhoang@outlook.com
 
 RUN apk update \
-    && apk add squid=4.8-r0 \
+    && apk add squid=4.11-r0 \
     && apk add curl \
     && rm -rf /var/cache/apk/*
 
